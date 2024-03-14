@@ -1,0 +1,54 @@
+/* SearchBar.module.css */
+.searchBarContainer {
+    position: absolute; /* または `fixed` を使うこともできます */
+    top: 5px; /* マップの上部からの距離 */
+    left: 1%; /* 水平方向の中央に配置する */
+    z-index: 10; /* マップの上に表示するためのz-index */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-input {
+    border: 2px solid #333;
+    /* Modern dark border */
+    border-right: none;
+    /* Hide the right border to merge with the button */
+    padding: 10px;
+    width: 250px;
+    border-top-left-radius: 20px;
+    /* Rounded corners on the left side */
+    border-bottom-left-radius: 20px;
+    outline: none;
+    /* Removes the default focus outline */
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    /* Dark background for the button */
+    color: white;
+    text-transform: uppercase;
+    /* Makes the text uppercase */
+    border-top-right-radius: 20px;
+    /* Rounded corners on the right side */
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    /* Changes the mouse cursor to a pointer */
+    border: none;
+    /* Removes the border */
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    /* Changes the border color when focused */
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    /* Changes background on hover */
+}
